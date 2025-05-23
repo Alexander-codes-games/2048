@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #faf8ef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(4, 100px);
+  gap: 10px;
+}
+
+#grid div {
+  width: 100px;
+  height: 100px;
+  background-color: #ccc0b3;
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  color: white;
+}
+
+#grid div.tile-2 { background-color: #eee4da; }
+#grid div.tile-4 { background-color: #ede0c8; }
+#grid div.tile-8 { background-color: #f2b179; }
+#grid div.tile-16 { background-color: #f59563; }
+#grid div.tile-32 { background-color: #f67c5f; }
+#grid div.tile-64 { background-color: #f65e3b; }
+#grid div.tile-128 { background-color: #edcf72; }
+#grid div.tile-256 { background-color: #edcc61; }
+#grid div.tile-512 { background-color: #edc850; }
+#grid div.tile-1024 { background-color: #edc53f; }
+#grid div.tile-2048 { background-color: #edc22e; }
+
+#score {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #333;
+}
